@@ -706,6 +706,8 @@ RUN \
     jupyter labextension install @krassowski/jupyterlab_go_to_definition && \
     # Install ipysheet jupyterlab extension
     jupyter labextension install ipysheet && \
+    # Install XPRIZE Lab
+    jupyter labextension install @xprize/xprizelab && \
     # Deprecation and validations:
     # Install jupyterlab_templates - https://github.com/timkpaine/jupyterlab_templates
     # Does not work currently
