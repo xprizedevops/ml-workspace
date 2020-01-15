@@ -569,6 +569,8 @@ RUN \
     apt-get install -y --no-install-recommends liblapack-dev libatlas-base-dev libeigen3-dev pandoc libblas-dev && \
     # Faiss - A library for efficient similarity search and clustering of dense vectors. 
     conda install -y -c pytorch faiss-cpu && \
+    # BUG FIX Install tiny-tokenizer before flair
+    pip install tiny-tokenizer && \
     # Install full pip requirements
     pip install --no-cache-dir --upgrade -r ${RESOURCES_PATH}/libraries/requirements-full.txt && \
     # Setup Spacy
